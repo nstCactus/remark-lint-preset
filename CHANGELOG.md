@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+## [0.1.0] - 2025-02-14
+
 ### Added
 
 - Extend from [remark-preset-lint-recommended](https://www.npmjs.com/package/remark-preset-lint-recommended)
@@ -28,3 +31,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Validated links
 
 [unreleased]: https://github.com/nstCactus/commitlint-config/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/nstCactus/commitlint-config/releases/tag/v0.1.0
