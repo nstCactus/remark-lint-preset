@@ -1,0 +1,57 @@
+{
+  "name": "@nstcactus/remark-lint-preset",
+  "description": "A remark preset to configure remark-lint with markdown style conventions",
+  "license": "MIT",
+  "version": "0.0.0-semantically-released",
+  "type": "module",
+  "author": "nstcactus <nstcactus@gmail.com>",
+  "bugs": "https://github.com/nstCactus/remark-lint-preset/issues",
+  "homepage": "https://npm.im/@nstcactus/remark-lint-preset",
+  "sideEffects": false,
+  "main": "./index.js",
+  "exports": "./index.js",
+  "engines": {
+    "node": ">= 16.14"
+  },
+  "scripts": {
+    "test": "npm-run-all --print-label --parallel lint:*",
+    "lint:md": "remark --frail .",
+    "lint:sensitive": "ban",
+    "lint:peer": "npm ls >/dev/null",
+    "lint:engines": "ls-engines",
+    "lint:publish": "publint --strict"
+  },
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "remark-gfm": "^4.0.1",
+    "remark-lint-emphasis-marker": "^4.0.1",
+    "remark-lint-fenced-code-marker": "^4.0.1",
+    "remark-lint-final-definition": "^4.0.2",
+    "remark-lint-heading-style": "^4.0.1",
+    "remark-lint-list-item-indent": "^4.0.1",
+    "remark-lint-maximum-line-length": "^4.1.1",
+    "remark-lint-no-empty-url": "^4.0.1",
+    "remark-lint-no-shell-dollars": "^4.0.1",
+    "remark-lint-no-tabs": "^4.0.1",
+    "remark-lint-no-unused-definitions": "^4.0.1",
+    "remark-lint-ordered-list-marker-value": "^4.0.1",
+    "remark-lint-strong-marker": "^4.0.1",
+    "remark-lint-unordered-list-marker-style": "^4.0.1",
+    "remark-preset-lint-recommended": "^7.0.1",
+    "remark-validate-links": "^13.0.2"
+  },
+  "devDependencies": {
+    "@nstcactus/commitlint-config": "^1.1.0",
+    "ban-sensitive-files": "^1.10.7",
+    "husky": "^9.1.7",
+    "ls-engines": "^0.9.3",
+    "npm-run-all2": "^7.0.2",
+    "publint": "^0.3.5",
+    "remark-cli": "^12.0.1"
+  }
+}
